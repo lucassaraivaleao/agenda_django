@@ -88,7 +88,7 @@ def delete_evento(request, id_evento):
     return redirect('/')
 
 
-
+#criação
 def json_lista_evento(request):
     usuario = request.user
     evento = Evento.objects.filter(usuario=usuario).values('id', 'titulo')
